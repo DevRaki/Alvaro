@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Prediccion de iris de fisher</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Prediccion de iris de fisher</h1>
+    <form action="/predict" method="post">
+
+
+      <label for="L_sepal">largo de el sepal:</label>
+      <input type="number" name="L_sepal" id="L_sepal" step="0.1" min="0.0" max="10.0" required><br><br>
+      <label for="W_sepal">ancho de el sepal:</label>
+      <input type="number" name="W_sepal" id="W_sepal" step="0.1" min="0.0" max="10.0" required><br><br>
+      <label for="L_petal">largo de el petalo:</label>
+      <input type="number" name="L_petal" id="L_petal" step="0.1" min="0.0" max="10.0" required><br><br>
+      <label for="W_petal">ancho de el petalo:</label>
+      <input type="number" name="W_petal" id="W_petal" step="0.1" min="0.0" max="10.0" required><br><br>
+
+
+      <button type="submit">Realizar prediccion</button>
+    </form>
+  </div>
+</body>
+</html>
